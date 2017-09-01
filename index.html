@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tab</title>
+    <link rel="stylesheet" href="css/jquery.tab.css" />
+
+    <style>
+        img{
+            max-height: 100%;
+            max-width: 100%;
+            display: block;
+        }
+
+        body{
+            background: #3a3a3a;
+        }
+
+
+
+        .title-list{
+
+        }
+
+        .title-list:after{
+            content: ' ';
+            display: block;
+            clear: both;
+        }
+
+        .title-list .title-item{
+            float: left;
+        }
+
+        .title-list .title-item.active{
+            color: #ff0303;
+        }
+
+
+
+        .demo{
+            margin-top: 40px;
+            margin-left: 100px;
+            background: #fff;
+            width: 500px;
+            padding: 10px;
+        }
+
+        .demo .label-list{
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+        }
+
+        .demo .label-list .label-item{
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <div id="demo1" class="demo">
+        <div class="label-list">
+            <div class="label-item">风景</div>
+            <div class="label-item">人物</div>
+            <div class="label-item">植物</div>
+            <div class="label-item">游戏</div>
+        </div>
+        <div class="content-list">
+            <div class="content-item">
+                <img src="http://img.kj-cy.cn/uploads/litimg/20161126/1480142692654169.jpg">
+            </div>
+            <div class="content-item">
+                <img src="http://xddzs.net/uploads/allimg/130813/10-130Q31GJU17.jpg">
+            </div>
+            <div class="content-item">
+                <img src="http://fs01.bokee.net/userfilespace/2014/07/10/shanxisenhe20696627.jpg">
+            </div>
+            <div class="content-item">
+                <img src="http://www.sjyx.com/wp-content/uploads/2017/06/327e1809-8dc0-4b7f-949b-27b365365024.jpg">
+            </div>
+        </div>
+    </div>
+
+
+    <div id="demo2" class="demo">
+        <div class="label-list">
+            <div class="label-item">风景</div>
+            <div class="label-item">人物</div>
+            <div class="label-item">植物</div>
+            <div class="label-item">游戏</div>
+        </div>
+        <div class="content-list">
+            <div class="content-item">
+                <img src="http://img.kj-cy.cn/uploads/litimg/20161126/1480142692654169.jpg">
+            </div>
+            <div class="content-item">
+                <img src="http://xddzs.net/uploads/allimg/130813/10-130Q31GJU17.jpg">
+            </div>
+            <div class="content-item">
+                <img src="http://fs01.bokee.net/userfilespace/2014/07/10/shanxisenhe20696627.jpg">
+            </div>
+            <div class="content-item">
+                <img src="http://www.sjyx.com/wp-content/uploads/2017/06/327e1809-8dc0-4b7f-949b-27b365365024.jpg">
+            </div>
+        </div>
+    </div>
+
+
+    <div id="demo3" class="demo">
+        <div class="title-list">
+            <div class="title-item">风景</div>
+            <div class="title-item">人物</div>
+            <div class="title-item">植物</div>
+            <div class="title-item">游戏</div>
+        </div>
+        <div class="content-list">
+            <div class="content-item">
+                <img src="http://img.kj-cy.cn/uploads/litimg/20161126/1480142692654169.jpg">
+            </div>
+            <div class="content-item">
+                <img src="http://xddzs.net/uploads/allimg/130813/10-130Q31GJU17.jpg">
+            </div>
+            <div class="content-item">
+                <img src="http://fs01.bokee.net/userfilespace/2014/07/10/shanxisenhe20696627.jpg">
+            </div>
+            <div class="content-item">
+                <img src="http://www.sjyx.com/wp-content/uploads/2017/06/327e1809-8dc0-4b7f-949b-27b365365024.jpg">
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.tab.js"></script>
+    <script type="text/javascript">
+
+        $("#demo1").tab();
+
+        $("#demo2").tab({
+            eventName: 'click'
+        });
+
+        $("#demo3").tab({
+            labelList: 'title-list',
+            labelItem: 'title-item'
+        });
+
+    </script>
+</body>
+</html>
