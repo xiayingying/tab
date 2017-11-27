@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>tab插件效果展示</title>
+		<link rel="stylesheet" href="dist/jquery.tab.css" />
+		<style>
+			body{
+				margin: 0;
+				font-family: "微软雅黑";
+				font-size: 14px;
+			}
+			
+			.box{
+				margin: 0 auto;
+				max-width: 800px;
+				background: #f0f0f0;
+				padding: 15px;
+			}
+			
+			.title {
+				margin-bottom: 15px;
+				margin-top: 15px;
+				font-weight: bold;
+			}
+			
+			#plus .tab-title-left {
+				font-weight: bold;
+				background: #326d2f;
+				padding-right: 15px;
+				padding-left: 15px;
+				height: 40px;
+				line-height: 40px;
+			}
+			
+			#plus .tab-title-right {
+				font-size: 13px;
+				height: 40px;
+				line-height: 40px;
+			}
+			
+			#plus .tab-content-left,
+			#plus .tab-content-right {
+
+				min-height: 200px;
+			}
+			
+			#plus .tab-content-item {
+				min-width: 400px;
+				min-height: 200px;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<div class="box">
+		<div class="title">1. 基本效果</div>
+		<div class="tab" id="basic">
+			<div class="tab-title-area">
+				<div class="tab-title">
+					<div class="tab-title-item">选项一</div>
+					<div class="tab-title-item">选项二</div>
+					<div class="tab-title-item">选项三</div>
+					<div class="tab-title-item">选项四</div>
+				</div>
+			</div>
+			<div class="tab-content-area">
+				<div class="tab-content">
+					<div class="tab-content-item">选项一</div>
+					<div class="tab-content-item">选项二</div>
+					<div class="tab-content-item">选项三</div>
+					<div class="tab-content-item">选项四</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="title">2. 带样式</div>
+		<div class="tab tab-theme" id="theme">
+			<div class="tab-title-area">
+				<div class="tab-title">
+					<div class="tab-title-item">选项一</div>
+					<div class="tab-title-item">选项二</div>
+					<div class="tab-title-item">选项三</div>
+					<div class="tab-title-item">选项四</div>
+				</div>
+			</div>
+			<div class="tab-content-area">
+				<div class="tab-content">
+					<div class="tab-content-item">选项一</div>
+					<div class="tab-content-item">选项二</div>
+					<div class="tab-content-item">选项三</div>
+					<div class="tab-content-item">选项四</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="title">3. 带附加内容</div>
+		<div class="tab tab-theme" id="plus">
+			<div class="tab-title-area">
+				<div class="tab-title-left">出境游</div>
+				<div class="tab-title">
+					<div class="tab-title-item">美国</div>
+					<div class="tab-title-item">欧洲</div>
+					<div class="tab-title-item">澳洲</div>
+					<div class="tab-title-item">新马泰</div>
+				</div>
+				<div class="tab-title-right">更多</div>
+			</div>
+			<div class="tab-content-area">
+				<div class="tab-content-left">出境游须知</div>
+				<div class="tab-content">
+					<div class="tab-content-item">选项一</div>
+					<div class="tab-content-item">选项二</div>
+					<div class="tab-content-item">选项三</div>
+					<div class="tab-content-item">选项四</div>
+				</div>
+				<div class="tab-content-right">出境游须知</div>
+			</div>
+		</div>
+
+		<div class="title">4. 竖向</div>
+		<div class="tab tab-theme tab-horizontal" id="horizontal">
+			<div class="tab-title-area">
+				<div class="tab-title">
+					<div class="tab-title-item">选项一</div>
+					<div class="tab-title-item">选项二</div>
+					<div class="tab-title-item">选项三</div>
+					<div class="tab-title-item">选项四</div>
+				</div>
+			</div>
+			<div class="tab-content-area">
+				<div class="tab-content">
+					<div class="tab-content-item">选项一</div>
+					<div class="tab-content-item">选项二</div>
+					<div class="tab-content-item">选项三</div>
+					<div class="tab-content-item">选项四</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="title">5. 嵌套</div>
+		<div class="tab tab-theme tab-horizontal" id="nest">
+			<div class="tab-title-area">
+				<div class="tab-title">
+					<div class="tab-title-item">出国游</div>
+					<div class="tab-title-item">内地游</div>
+					<div class="tab-title-item">周边游</div>
+					<div class="tab-title-item">自由行</div>
+				</div>
+			</div>
+			<div class="tab-content-area">
+				<div class="tab-content">
+					<div class="tab-content-item">
+						
+						
+						<div class="tab tab-theme" id="nest_1">
+							<div class="tab-title-area">
+								<div class="tab-title">
+									<div class="tab-title-item">美国</div>
+									<div class="tab-title-item">法国</div>
+									<div class="tab-title-item">俄罗斯</div>
+									<div class="tab-title-item">印度</div>
+								</div>
+							</div>
+							<div class="tab-content-area">
+								<div class="tab-content">
+									<div class="tab-content-item">美国内容</div>
+									<div class="tab-content-item">法国内容</div>
+									<div class="tab-content-item">俄罗斯内容</div>
+									<div class="tab-content-item">印度内容</div>
+								</div>
+							</div>
+						</div>
+						
+						
+					</div>
+					<div class="tab-content-item">内地游内容</div>
+					<div class="tab-content-item">周边游内容</div>
+					<div class="tab-content-item">自由行内容</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="title">6. 鼠标悬停切换</div>
+		<div class="tab tab-theme" id="mouse">
+			<div class="tab-title-area">
+				<div class="tab-title">
+					<div class="tab-title-item">选项一</div>
+					<div class="tab-title-item">选项二</div>
+					<div class="tab-title-item">选项三</div>
+					<div class="tab-title-item">选项四</div>
+				</div>
+			</div>
+			<div class="tab-content-area">
+				<div class="tab-content">
+					<div class="tab-content-item">选项一</div>
+					<div class="tab-content-item">选项二</div>
+					<div class="tab-content-item">选项三</div>
+					<div class="tab-content-item">选项四</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="title">7. 附加样式</div>
+		<div class="tab" id="plus_theme">
+			<div class="tab-title-area">
+				<div class="tab-title">
+					<div class="tab-title-item">选项一</div>
+					<div class="tab-title-item">选项二</div>
+					<div class="tab-title-item">选项三</div>
+					<div class="tab-title-item">选项四</div>
+				</div>
+			</div>
+			<div class="tab-content-area">
+				<div class="tab-content">
+					<div class="tab-content-item">选项一</div>
+					<div class="tab-content-item">选项二</div>
+					<div class="tab-content-item">选项三</div>
+					<div class="tab-content-item">选项四</div>
+				</div>
+			</div>
+		</div>
+</div>
+		<script type="text/javascript" src="src/jquery.min.js"></script>
+		<script type="text/javascript" src="dist/jquery.tab.js"></script>
+		<script>
+			$('#basic').tab();
+			$('#theme').tab();
+			$('#plus').tab();
+			$('#horizontal').tab();
+			
+			$('#nest').tab();
+			$('#nest_1').tab();
+			
+			$('#mouse').tab({
+				'eventName': 'mouseover'
+			});
+			
+			$('#plus_theme').tab({
+				plusClass: 'tab-theme'
+			});
+		</script>
+	</body>
+</html>

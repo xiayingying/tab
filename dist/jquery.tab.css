@@ -1,0 +1,65 @@
+.tab {}
+
+.tab>.tab-title-area:after,
+.tab>.tab-content-area:after {
+	display: block;
+	content: ' ';
+	clear: both;
+}
+
+.tab>.tab-title-area>.tab-title-left,
+.tab>.tab-title-area>.tab-title,
+.tab>.tab-title-area>.tab-title-right,
+.tab>.tab-content-area>.tab-content-left,
+.tab>.tab-content-area>.tab-content,
+.tab>.tab-content-area>.tab-content-right,
+.tab>.tab-title-area>.tab-title>.tab-title-item {
+	float: left;
+}
+
+.tab>.tab-title-area>.tab-title:after {
+	display: block;
+	content: ' ';
+	clear: both;
+}
+
+.tab> .tab-title-area> .tab-title> .tab-title-item.active {}
+
+.tab> .tab-content-area> .tab-content> .tab-content-item {
+	display: none;
+}
+
+.tab-horizontal:after {
+	display: block;
+	content: ' ';
+	clear: both;
+}
+
+.tab-horizontal>.tab-title-area,
+.tab-horizontal>.tab-content-area {
+	float: left;
+}
+
+.tab-horizontal>.tab-title-area>.tab-title-left,
+.tab-horizontal>.tab-title-area>.tab-title,
+.tab-horizontal>.tab-title-area>.tab-title-right,
+.tab-horizontal>.tab-content-area>.tab-content-left,
+.tab-horizontal>.tab-content-area>.tab-content,
+.tab-horizontal>.tab-content-area>.tab-content-right,
+.tab-horizontal>.tab-title-area>.tab-title>.tab-title-item {
+	float: none;
+}
+
+.tab-theme {}
+
+.tab-theme> .tab-title-area {
+	color: #fff;
+	background: #51807c;
+}
+
+.tab-theme> .tab-title-area> .tab-title> .tab-title-item {
+	padding-left: 10px;
+	padding-right: 10px;
+	height: 40px;
+	line-height: 40px;
+}
